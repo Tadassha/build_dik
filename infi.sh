@@ -52,7 +52,7 @@ https://github.com/LineageOS/android_packages_resources_devicesettings -b lineag
 # --- Vanilla Build ---
 echo "===== Starting Vanilla Build ====="
 . build/envsetup.sh && \
-breakfast apollo user && \
+breakfast vermeer user && \
 make installclean && \
 mka bacon
 
