@@ -74,7 +74,7 @@ cd ../../..
 echo "===== Starting Vanilla Build ====="
 
 . build/envsetup.sh && \
-lunch crdroid_vermeer-bp2a-userdebug && \
+breakfast vermeer userdebug && \
 make installclean && \
 mka bacon
 
