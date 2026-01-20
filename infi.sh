@@ -47,10 +47,10 @@ rm -rf hardware/qcom-caf/sm8550/audio
 rm -rf hardware/qcom-caf/sm8550/media
 rm -rf hardware/qcom-caf/sm8550/display
 rm -rf hardware/qcom-caf/sm8550/gps
-git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-23.0-caf-sm8550 hardware/qcom-caf/sm8550/audio
-git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-23.0-caf-sm8550 hardware/qcom-caf/sm8550/media
+git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-23.0 hardware/qcom-caf/sm8550/audio
+git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-22.0-caf-sm8550 hardware/qcom-caf/sm8550/media
 git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-23.0-caf-sm8550 hardware/qcom-caf/sm8550/display
-git clone https://github.com/LineageOS/android_hardware_qcom_gps -b lineage-23.0-caf-sm8550 hardware/qcom-caf/sm8550/gps
+git clone https://github.com/LineageOS/android_hardware_qcom_gps -b lineage-23.0  hardware/qcom-caf/sm8550/gps
 
 # --- Device Settings ---
 #rm -rf packages/resources/devicesettings
