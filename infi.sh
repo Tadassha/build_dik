@@ -31,8 +31,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.0 h
 #git clone https://github.com/Evolution-X-Devices/hardware_xiaomi -b bka hardware/xiaomi && \
 
 # --- Clone Kernel Tree ---
-rm -rf kernel/xiaomi/sm8550 kernel/xiaomi/sm8550-devicetrees kernel/xiaomi/sm8550-modules
-git clone https://github.com/LineageOS/android_device_xiaomi_sm8550-common -b lineage-23.0 device/xiaomi/sm8550-common
+rm -rf kernel/xiaomi/sm8550 kernel/xiaomi/sm8550-devicetrees kernel/xiaomi/sm8550-modules device/xiaomi/sm8550-common
 git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550 -b lineage-23.0 kernel/xiaomi/sm8550
 git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550-devicetrees -b lineage-23.0 kernel/xiaomi/sm8550-devicetrees
 git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550-modules -b lineage-23.0 kernel/xiaomi/sm8550-modules
@@ -43,14 +42,22 @@ git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8550-common 
 git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_vermeer -b lineage-23.0 vendor/xiaomi/vermeer
 
 # -- addition ---
+rm -rf hardware/qcom-caf/common
+rm -rf vendor/qcom/opensource/dataipa
 rm -rf hardware/qcom-caf/sm8550/audio
 rm -rf hardware/qcom-caf/sm8550/media
 rm -rf hardware/qcom-caf/sm8550/display
 rm -rf hardware/qcom-caf/sm8550/gps
 git clone https://github.com/LineageOS/android_hardware_qcom_audio -b lineage-23.0 hardware/qcom-caf/sm8550/audio
-git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-22.0-caf-sm8550 hardware/qcom-caf/sm8550/media
+# just dont have last version for 8550
+#git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-22.0-caf-sm8550 hardware/qcom-caf/sm8550/media
 git clone https://github.com/LineageOS/android_hardware_qcom_display -b lineage-23.0-caf-sm8550 hardware/qcom-caf/sm8550/display
 git clone https://github.com/LineageOS/android_hardware_qcom_gps -b lineage-23.0  hardware/qcom-caf/sm8550/gps
+git clone https://github.com/LineageOS/android_vendor_qcom_opensource_dataipa -b lineage-23.0-caf-sm8550 vendor/qcom/opensource/dataipa
+git clone https://github.com/LineageOS/android_vendor_qcom_opensource_display-commonsys-intf -b lineage-23.0 vendor/qcom/opensource/commonsys-intf/display
+git clone https://github.com/LineageOS/android_hardware_qcom-caf_common -b lineage-23.0 hardware/qcom-caf/common
+
+
 
 # --- Device Settings ---
 #rm -rf packages/resources/devicesettings
