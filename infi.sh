@@ -63,13 +63,6 @@ git clone https://github.com/LineageOS/android_hardware_qcom-caf_common -b linea
 #  Build: Vanilla → Gapps
 # =============================
 
-echo "===== Preparing Trees for crDroid ====="
-cd device/xiaomi/vermeer
-[ -f lineage_vermeer.mk ] && mv lineage_vermeer.mk crdroid_vermeer.mk
-sed -i 's/lineage_vermeer/crdroid_vermeer/g' crdroid_vermeer.mk
-sed -i 's/vendor\/lineage/vendor\/crdroid/g' crdroid_vermeer.mk
-cd ../../..
-
 # --- Vanilla Build ---
 echo "===== Starting Vanilla Build ====="
 
