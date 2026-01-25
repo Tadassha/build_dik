@@ -14,8 +14,7 @@ rm -rf .repo/manifest.xml
 #rm -rf packages/resources/devicesettings
 
 # --- Init ROM repo ---
-repo init -u https://github.com/LineageOS/android.git -b lineage-23.1 --git-lfs --no-clone-bundle && \
-
+repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
 # --- Sync ROM ---
 /opt/crave/resync.sh && \
 #repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
@@ -31,10 +30,10 @@ rm -rf hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.1 hardware/xiaomi && \
 
 # --- Clone Kernel Tree ---
-#rm -rf kernel/xiaomi/sm8550 kernel/xiaomi/sm8550-devicetrees kernel/xiaomi/sm8550-modules device/xiaomi/sm8550-common
-#git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550 -b lineage-23.0 kernel/xiaomi/sm8550
-#git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550-devicetrees -b lineage-23.0 kernel/xiaomi/sm8550-devicetrees
-#git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550-modules -b lineage-23.0 kernel/xiaomi/sm8550-modules
+rm -rf kernel/xiaomi/sm8550 kernel/xiaomi/sm8550-devicetrees kernel/xiaomi/sm8550-modules device/xiaomi/sm8550-common
+git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550 -b lineage-23.0 kernel/xiaomi/sm8550
+git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550-devicetrees -b lineage-23.0 kernel/xiaomi/sm8550-devicetrees
+git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550-modules -b lineage-23.0 kernel/xiaomi/sm8550-modules
 
 # --- Clone Vendor Tree ---
 rm -rf vendor/xiaomi
