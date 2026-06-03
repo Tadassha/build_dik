@@ -47,10 +47,11 @@ git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8550-common 
 
 # --- Vanilla Build ---
 echo "===== Starting Vanilla Build ====="
-
+export KBUILD_NO_HEADER_TEST=1
+export SKIP_ABI_CHECKS=true
 . build/envsetup.sh && \
 breakfast vermeer userdebug && \
-make install clean && \
+make installclean && \
 mka bacon
 
 echo "===== All builds completed successfully! ====="
