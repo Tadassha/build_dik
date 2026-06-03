@@ -50,7 +50,7 @@ echo "===== Starting Vanilla Build ====="
 
 . build/envsetup.sh && \
 breakfast vermeer userdebug && \
-make installclean && \
+make install clean && \
 mka bacon
 
 echo "===== All builds completed successfully! ====="
