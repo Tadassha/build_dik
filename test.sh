@@ -31,7 +31,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 h
 
 # --- Clone Kernel Tree ---
 rm -rf kernel/xiaomi/sm8550 kernel/xiaomi/sm8550-devicetrees kernel/xiaomi/sm8550-modules
-git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550 -b lineage-23.2 kernel/xiaomi/sm8550
+git clone https://github.com/Tadassha/android_kernel_xiaomi_sm8550 -b lineage-23.2 kernel/xiaomi/sm8550
 git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8550-devicetrees -b lineage-23.2 kernel/xiaomi/sm8550-devicetrees
 git clone https://github.com/Tadassha/android_kernel_xiaomi_sm8550-modules -b lineage-23.2 kernel/xiaomi/sm8550-modules
 
